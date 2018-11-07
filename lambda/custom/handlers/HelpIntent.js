@@ -8,6 +8,8 @@ module.exports = {
     const speechText = [
       '香川県のトリビアを教えて',
       'のように話しかけることで都道府県トリビアを知ることができます',
+      'また、都道府県に関するデータは、DBpedia Japaneseのデータを使用しています。',
+      'これらのデータはCC BY-SA 3.0でライセンスされています。',
       '何を知りたいですか？'
     ].join('。 ')
     const reprompt = [

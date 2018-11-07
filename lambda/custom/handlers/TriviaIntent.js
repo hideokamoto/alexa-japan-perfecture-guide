@@ -8,7 +8,7 @@ const {
 const {
   getDBPediaContent
 } = require('../sparqls/index')
-const { SKILL_NAME } = require('../constans')
+const { SKILL_NAME, LICENSE } = require('../constans')
 module.exports = {
   canHandle (handlerInput) {
     return canHandle(handlerInput, 'IntentRequest', 'RandomTriviaIntent')
@@ -22,6 +22,8 @@ module.exports = {
     } = await getDBPediaContent(prefName, randomFact)
     const repromptText = 'ほかに調べたいことはありますか？'
     speaks.push(repromptText)
+    contents.push('')
+    contents.push(LICENSE)
 
     return handlerInput.responseBuilder
       .speak(speaks.join('。'))
