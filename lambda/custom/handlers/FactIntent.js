@@ -9,6 +9,7 @@ const {
 const {
   getDBPediaContent
 } = require('../sparqls/index')
+const { SKILL_NAME } = require('../constans')
 module.exports = {
   canHandle (handlerInput) {
     return canHandle(handlerInput, 'IntentRequest', 'FactIntent')
@@ -21,12 +22,13 @@ module.exports = {
       speaks,
       contents
     } = await getDBPediaContent(prefName, factType)
-    const speechText = 'Welcome to the Alexa Skills Kit, you can say hello!'
+    const repromptText = 'ほかに調べたいことはありますか？'
+    speaks.push(repromptText)
 
     return handlerInput.responseBuilder
       .speak(speaks.join('。'))
-      .reprompt(speechText)
-      .withSimpleCard('Hello World', contents.join('\n'))
+      .reprompt(repromptText)
+      .withSimpleCard(SKILL_NAME, contents.join('\n'))
       .getResponse()
   }
 }

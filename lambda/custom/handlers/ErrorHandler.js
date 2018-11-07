@@ -1,3 +1,4 @@
+// const { SKILL_NAME } = require('../constans')
 module.exports = {
   canHandle () {
     return true

@@ -16,14 +16,14 @@
       },
       "resources": {
         "manifest": {
-          "eTag": "990f8c03ba4f8787912d5ea88aa7d766"
+          "eTag": "f2c5014593ab6b984c26de6a81002096"
         },
         "interactionModel": {
           "en-US": {
             "eTag": "04ed309bb36bc611892188a928efb0db"
           },
           "ja-JP": {
-            "eTag": "8c5333a4c862e9d2bd917da005d5495a"
+            "eTag": "584d171b2c34a01f3252dff7d4d2073e"
           }
         }
       },
