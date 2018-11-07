@@ -3,7 +3,47 @@
     "languageModel": {
       "invocationName": "都道府県トリビア",
       "types": [
-
+        {
+          "name": "factType",
+          "values": [
+            {
+              "name": {
+                "value": "popRank",
+                "synonyms": [
+                  "人口の順位"
+                ]
+              }
+            },{
+              "name": {
+                "value": "areaRank",
+                "synonyms": [
+                  "面積の順位"
+                ]
+              }
+            },{
+              "name": {
+                "value": "birthPlace",
+                "synonyms": [
+                  "出身の人物"
+                ]
+              }
+            },{
+              "name": {
+                "value": "capital",
+                "synonyms": [
+                  "県庁所在地"
+                ]
+              }
+            },{
+              "name": {
+                "value": "island",
+                "synonyms": [
+                  "島"
+                ]
+              }
+            }
+          ]
+        }
       ],
       "intents": [
         {
@@ -43,6 +83,21 @@
           ],
           "samples": [
             "{pref} のトリビアを教えて"
+          ]
+        }, {
+          "name": "FactIntent",
+          "slots": [
+            {
+              "name": "pref",
+              "type": "AMAZON.Region"
+            },
+            {
+              "name": "factType",
+              "type": "factType"
+            }
+          ],
+          "samples": [
+            "{pref} の {factType} を教えて"
           ]
         }
       ]
