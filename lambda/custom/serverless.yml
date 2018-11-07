@@ -1,0 +1,11 @@
+service:
+  name: ask-japan-pref-guide
+provider:
+  name: aws
+  runtime: nodejs8.10
+  logRetentionInDays: 7
+functions:
+  mySkill:
+    handler: index.handler
+    events:
+      - alexaSkill

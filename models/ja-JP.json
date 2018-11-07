@@ -1,0 +1,51 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "都道府県トリビア",
+      "types": [
+
+      ],
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": [
+
+          ]
+        },
+        {
+          "name": "RandomTriviaIntent",
+          "slots": [
+
+          ],
+          "samples": [
+            "トリビアを教えて"
+          ]
+        },
+        {
+          "name": "TriviaIntent",
+          "slots": [
+            {
+              "name": "pref",
+              "type": "AMAZON.Region"
+            }
+          ],
+          "samples": [
+            "{pref} のトリビアを教えて"
+          ]
+        }
+      ]
+    }
+  }
+}
