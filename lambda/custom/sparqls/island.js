@@ -47,9 +47,9 @@ WHERE {
     if (!item[key] || !item[key].value) return {}
     const islandName = item[key].value
     const speaks = this.lang === 'ja-JP' ? [
-      `この都道府県は${islandName}にあります。`
+      `${prefName}は${islandName}にあります。`
     ] : [
-      `The prefecture is in ${islandName} island.`
+      `The ${prefName} prefecture is in ${islandName} island.`
     ]
     const contents = this.lang === 'ja-JP' ? [
       '都道府県のある島',

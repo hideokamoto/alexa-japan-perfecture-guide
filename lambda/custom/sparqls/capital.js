@@ -47,15 +47,15 @@ WHERE {
     if (!item[key] || !item[key].value) return {}
     const name = item[key].value
     const speaks = this.lang === 'ja-JP' ? [
-      'この都道府県の県庁所在地は次の都市です。'
+      `${prefName}の県庁所在地は次の都市です。`
     ] : [
-      'This is the capital city of the prefecture.'
+      `This is the capital city of the ${prefName}. `
     ]
     speaks.push(name)
     const contents = this.lang === 'ja-JP' ? [
-      '都道府県の県庁所在地'
+      `${prefName}の県庁所在地`
     ] : [
-      'The capital city of the prefecture'
+      `The capital city of the ${prefName}. `
     ]
     contents.push(name)
     return {

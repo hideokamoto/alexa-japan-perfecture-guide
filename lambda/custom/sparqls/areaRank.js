@@ -44,9 +44,9 @@ WHERE {
     if (!item[key] || !item[key].value) return {}
     const rank = item[key].value
     const speaks = this.lang === 'ja-JP' ? [
-      `この都道府県の面積は、全国で${rank}位です。`
+      `${prefName}の面積は、全国で${rank}位です。`
     ] : [
-      `The area rank is ${rank}.`
+      `In ${prefName}. The area rank is ${rank}. `
     ]
     const contents = this.lang === 'ja-JP' ? [
       '都道府県面積のランキング',

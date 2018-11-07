@@ -45,9 +45,9 @@ WHERE {
     const value = item[key].value.split('.')
     const rank = value[0]
     const speaks = this.lang === 'ja-JP' ? [
-      `この都道府県の人口は、全国で${rank}位です。`
+      `${prefName}の人口は、全国で${rank}位です。`
     ] : [
-      `The population rank is ${rank}.`
+      `In the ${prefName} prefecture, the population rank is ${rank}.`
     ]
     const contents = this.lang === 'ja-JP' ? [
       '都道府県人口のランキング',
