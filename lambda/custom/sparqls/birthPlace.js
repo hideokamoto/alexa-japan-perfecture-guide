@@ -55,7 +55,7 @@ WHERE {
     if (!items || items.length < 1) return {}
     items.splice(2)
     let speaks = this.lang === 'ja-JP' ? [
-      'この地域出身の人物には次の人たちがいます。'
+      'この地域出身の人物には次の人たちがいます'
     ] : [
       "These people's hometown is this prefecture."
     ]
