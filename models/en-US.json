@@ -25,6 +25,15 @@
           ]
         },
         {
+          "name": "RandomTriviaIntent",
+          "slots": [
+
+          ],
+          "samples": [
+            "tell me random trivia"
+          ]
+        },
+        {
           "name": "HelloWorldIntent",
           "slots": [
 

@@ -2,6 +2,16 @@
   "manifest": {
     "publishingInformation": {
       "locales": {
+        "ja-JP": {
+          "summary": "Sample Short Description",
+          "examplePhrases": [
+            "Alexa open hello world",
+            "Alexa tell hello world hello",
+            "Alexa ask hello world say hello"
+          ],
+          "name": "都道府県トリビア",
+          "description": "Sample Full Description"
+        },
         "en-US": {
           "summary": "Sample Short Description",
           "examplePhrases": [
