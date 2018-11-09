@@ -119,6 +119,20 @@
           ]
         },
         {
+            "name": "AMAZON.YesIntent",
+            "samples": [
+              "あります",
+              "ある"
+            ]
+        },
+        {
+            "name": "AMAZON.NoIntent",
+            "samples": [
+              "ありません",
+              "ない"
+            ]
+        },
+        {
           "name": "RandomTriviaIntent",
           "samples": [
             "トリビアをなにか聞かせて",
@@ -203,7 +217,32 @@
             "{pref} の {factType} はなにがある",
             "{pref} の {factType} ってなに",
             "{pref} の {factType} はなに",
-            "{pref} の {factType}"
+            "{pref} {factType}",
+            "{pref} {factType} を教えて",
+            "{pref} {factType} について教えて",
+            "{pref} {factType} 教えて",
+            "{pref} {factType} について",
+            "{pref} {factType} を知りたい",
+            "{pref} {factType} についてを知りたい",
+            "{pref} {factType} はどうでしょうか",
+            "{pref} {factType} はどうですか",
+            "{pref} {factType} はどう",
+            "{pref} {factType} は",
+            "{pref} {factType} を",
+            "{pref} {factType} って",
+            "{pref} {factType} ってどんなのがありますか",
+            "{pref} {factType} はどんなのがありますか",
+            "{pref} {factType} ってどんなのがある",
+            "{pref} {factType} はどんなのがある",
+            "{pref} {factType} ってどんなの",
+            "{pref} {factType} はどんなの",
+            "{pref} {factType} ってどう",
+            "{pref} {factType} はどう",
+            "{pref} {factType} ってなにがある",
+            "{pref} {factType} はなにがある",
+            "{pref} {factType} ってなに",
+            "{pref} {factType} はなに",
+            "{pref} {factType}"
           ]
         }
       ]

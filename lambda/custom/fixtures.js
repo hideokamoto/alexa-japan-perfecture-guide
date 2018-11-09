@@ -30,7 +30,10 @@ class SpeechconContent {
       'またいつでもどうぞ'
     ])
 
-    return `<say-as interpret-as="interjection">${speechText}</say-as>`
+    return {
+      speachText: `<say-as interpret-as="interjection">${speechText}</say-as>`,
+      text: speechText
+    }
   }
 }
 

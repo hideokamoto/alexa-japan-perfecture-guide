@@ -11,7 +11,7 @@ const {
 const { SKILL_NAME, LICENSE } = require('../constans')
 module.exports = {
   canHandle (handlerInput) {
-    return canHandle(handlerInput, 'IntentRequest', 'RandomTriviaIntent')
+    return canHandle(handlerInput, 'IntentRequest', 'TriviaIntent')
   },
   async handle (handlerInput) {
     const prefName = getPrefName(handlerInput)
