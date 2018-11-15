@@ -65,13 +65,21 @@ const getRandomPrefName = () => getRandomMessage([
   '鹿児島県',
   '沖縄県'
 ])
-const getRandomFactType = () => getRandomMessage([
-  'popRank',
-  'areaRank',
-  'birthPlace',
-  'capital',
-  'island'
-])
+const getRandomFactType = (prefName) => {
+  if (prefName === '東京都') {
+    return getRandomMessage([
+      'birthPlace',
+      'capital'
+    ])
+  }
+  return getRandomMessage([
+    'popRank',
+    'areaRank',
+    'birthPlace',
+    'capital',
+    'island'
+  ])
+}
 
 module.exports = {
   getRandomPrefName,

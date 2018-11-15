@@ -15,7 +15,7 @@ module.exports = {
   },
   async handle (handlerInput) {
     const prefName = getPrefName(handlerInput)
-    const randomFact = getRandomFactType()
+    const randomFact = getRandomFactType(prefName)
     const {
       speaks,
       contents

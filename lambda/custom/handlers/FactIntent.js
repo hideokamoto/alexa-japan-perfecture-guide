@@ -23,6 +23,15 @@ module.exports = {
       contents
     } = await getDBPediaContent(prefName, factType)
     const repromptText = 'ほかに調べたいことはありますか？'
+    if (!speaks || speaks.length < 1 || !contents || contents.length < 1) {
+      return handlerInput.responseBuilder
+        .speak([
+          'すみません。そのコンテンツについて、DB Pediaから情報を取得することができませんでした。',
+          repromptText
+        ].join(''))
+        .reprompt(repromptText)
+        .getResponse()
+    }
     speaks.push(repromptText)
     contents.push('')
     contents.push(LICENSE)
