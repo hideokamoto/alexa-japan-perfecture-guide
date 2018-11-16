@@ -66,6 +66,7 @@ WHERE {
     ]
     items.forEach(item => {
       const spokenName = this.lang === 'ja-JP' ? reverseEnName(item.en_name.value, item.name.value) : item.en_name.value
+      if (spokenName === 'Akihito') return
       speaks.push(spokenName)
       contents.push(this.lang === 'ja-JP' ? item.name.value : item.en_name.value)
     })
